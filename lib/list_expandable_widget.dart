@@ -1,10 +1,26 @@
+///
+/// list_expandable_widget.dart
+/// Purpose: Supply boilerplate for expandable list
+/// Description:
+/// Created: Aug 11th 2020
+/// Copyright (C) 2020 Liem Vo.
+///
 import 'package:flutter/material.dart';
 
 class ListExpandableWidget extends StatefulWidget {
+  // optional property and default value is false
   final bool isExpanded;
+
+  // required widget and display the header of each group
   final Widget header;
+
+  // required list `ListTile` widget for group items
   final List<ListTile> items;
+
+  // optional widget for expanded Icon. Default value is `Icon(Icons.keyboard_arrow_down)`
   final Widget expandedIcon;
+
+  // optional widget for collapse Icon. Default value is `Icon(Icons.keyboard_arrow_right)`
   final Widget collapsedIcon;
 
   ListExpandableWidget(

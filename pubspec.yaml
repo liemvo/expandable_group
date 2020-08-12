@@ -1,7 +1,6 @@
 name: list_expandable
 description: A new Flutter widget support expanded and collapsed list for user..
-version: 0.0.1
-author: Liem Vo
+version: 0.0.3
 homepage: https://github.com/liemvo/list_expandable
 
 environment:

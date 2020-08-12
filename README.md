@@ -1,4 +1,4 @@
-# list_expandable
+# ListExpandable
 
 A new Flutter widget support expanded and collapsed list for Flutter application. It supports Android, iOS, Web and Desktop.
 
@@ -19,7 +19,7 @@ Build expandable list widget support expanded and collapsed group data.
 
 ```
 dependencies:
-  list_expandable: ^0.0.1
+  list_expandable: ^0.0.3
 ```
 
 ### 2. Import `list_expandable_widget.dart` to your file project where is going to use the `ListExpandableWidget`.

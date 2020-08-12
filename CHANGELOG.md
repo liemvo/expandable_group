@@ -1,3 +1,4 @@
-## [0.0.1] - August 12 2020
+## [0.0.3] - August 12 2020
 
+* Add API documentation
 * First release version
