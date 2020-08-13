@@ -1,5 +1,5 @@
 ///
-/// list_expandable_widget.dart
+/// expandable_group_widget.dart
 /// Purpose: Supply boilerplate for expandable list
 /// Description:
 /// Created: Aug 11th 2020
@@ -7,7 +7,7 @@
 ///
 import 'package:flutter/material.dart';
 
-class ListExpandableWidget extends StatefulWidget {
+class ExpandableGroup extends StatefulWidget {
   // optional property and default value is false
   final bool isExpanded;
 
@@ -23,7 +23,7 @@ class ListExpandableWidget extends StatefulWidget {
   // optional widget for collapse Icon. Default value is `Icon(Icons.keyboard_arrow_right)`
   final Widget collapsedIcon;
 
-  ListExpandableWidget(
+  ExpandableGroup(
       {Key key,
       this.isExpanded = false,
       @required this.header,
@@ -33,10 +33,10 @@ class ListExpandableWidget extends StatefulWidget {
       : super(key: key);
 
   @override
-  _ListExpandableWidgetState createState() => _ListExpandableWidgetState();
+  _ExpandableGroupState createState() => _ExpandableGroupState();
 }
 
-class _ListExpandableWidgetState extends State<ListExpandableWidget> {
+class _ExpandableGroupState extends State<ExpandableGroup> {
   bool _isExpanded;
 
   @override

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:list_expandable/list_expandable_widget.dart';
+import 'package:expandable_group/expandable_group_widget.dart';
 
 void main() {
   runApp(MyApp());
@@ -10,14 +10,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Expandable List demo',
+      title: 'Expandable Group demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       debugShowCheckedModeBanner: false,
       home: MyHomePage(
-        title: 'Expandable List demo',
+        title: 'Expandable Group demo',
         data: _generateData(),
       ),
     );
@@ -59,7 +59,7 @@ class _MyHomePageState extends State<MyHomePage> {
           Column(
             children: widget.data.map((group) {
               int index = widget.data.indexOf(group);
-              return ListExpandableWidget(
+              return ExpandableGroup(
                 isExpanded: index == 0,
                 header: _header('Group $index'),
                 items: _buildItems(context, group),
