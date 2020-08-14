@@ -19,7 +19,7 @@ Build expandable group widget support expanded and collapsed group data.
 
 ```
 dependencies:
-  expandable_group: ^0.0.5
+  expandable_group: ^0.0.6
 ```
 
 ### 2. Import `expandable_group_widget.dart` to your file project where is going to use the `ListExpandableWidget`.
@@ -37,13 +37,14 @@ import 'package:expandable_group/expandable_group_widget.dart';
 #### 3.2 Optional
 * `isExpanded` is a boolean to expand or collapse header. `isExpanded == true` is the header will be expanded and otherwise. The default value is `false`.
 * `expandedIcon` and `collapsedIcon` are the widgets for expanded and collapsed state. 
-
+* `headerEdgeInsets` the EdgeInsets of header widget
 ### 4. Examples
 ```
 ExpandableGroup(
     isExpanded: index == 0,
     header: _header('Group $index'),
     items: _buildItems(context, group),
+    headerEdgeInsets: EdgeInsets.only(left: 16.0, right: 16.0)
 )
 ```
 

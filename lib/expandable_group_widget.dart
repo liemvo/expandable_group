@@ -23,13 +23,16 @@ class ExpandableGroup extends StatefulWidget {
   // optional widget for collapse Icon. Default value is `Icon(Icons.keyboard_arrow_right)`
   final Widget collapsedIcon;
 
+  final EdgeInsets headerEdgeInsets;
+
   ExpandableGroup(
       {Key key,
-      this.isExpanded = false,
-      @required this.header,
-      @required this.items,
-      this.expandedIcon,
-      this.collapsedIcon})
+        this.isExpanded = false,
+        @required this.header,
+        @required this.items,
+        this.expandedIcon,
+        this.collapsedIcon,
+        this.headerEdgeInsets})
       : super(key: key);
 
   @override
@@ -59,6 +62,7 @@ class _ExpandableGroupState extends State<ExpandableGroup> {
       children.add(Divider());
     }
     children.add(ListTile(
+      contentPadding: widget.headerEdgeInsets != null ? widget.headerEdgeInsets : EdgeInsets.only(left: 0.0, right: 16.0),
       title: widget.header,
       trailing: _isExpanded
           ? widget.expandedIcon ?? Icon(Icons.keyboard_arrow_down)

@@ -63,6 +63,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 isExpanded: index == 0,
                 header: _header('Group $index'),
                 items: _buildItems(context, group),
+                headerEdgeInsets: EdgeInsets.only(left: 16.0, right: 16.0),
               );
             }).toList(),
           )
