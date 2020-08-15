@@ -1,3 +1,6 @@
+## [0.0.7] - August 15 2020
+* Document API
+
 ## [0.0.6] - August 15 2020
 
 * Support customize header background

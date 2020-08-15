@@ -1,6 +1,6 @@
 name: expandable_group
 description: A new Flutter widget support expanded and collapsed list for user..
-version: 0.0.6
+version: 0.0.7
 homepage: https://github.com/liemvo/expandable_group
 
 environment:

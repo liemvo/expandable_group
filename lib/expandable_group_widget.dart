@@ -8,23 +8,39 @@
 import 'package:flutter/material.dart';
 
 class ExpandableGroup extends StatefulWidget {
-  // optional property and default value is false
+  /// optional property control the expanded or collapsed list
+  ///
+  /// Default value is false
   final bool isExpanded;
 
-  // required widget and display the header of each group
+  /// required widget and display the header of each group
+  ///
+  ///
   final Widget header;
 
-  // required list `ListTile` widget for group items
+  /// required list `ListTile` widget for group items
+  ///
+  ///
   final List<ListTile> items;
 
-  // optional widget for expanded Icon. Default value is `Icon(Icons.keyboard_arrow_down)`
+  /// optional widget for expanded Icon.
+  ///
+  /// Default value is `Icon(Icons.keyboard_arrow_down)`
   final Widget expandedIcon;
 
-  // optional widget for collapse Icon. Default value is `Icon(Icons.keyboard_arrow_right)`
+  /// optional widget for collapse Icon.
+  ///
+  /// Default value is `Icon(Icons.keyboard_arrow_right)`
   final Widget collapsedIcon;
 
+  /// option value for header EdgeInsets
+  ///
+  /// Default value will `EdgeInsets.only(left: 0.0, right: 16.0)`
   final EdgeInsets headerEdgeInsets;
 
+  /// background color of header
+  ///
+  /// Default value `Theme.of(context).appBarTheme.color`
   final Color headerBackgroundColor;
 
   ExpandableGroup({Key key,
