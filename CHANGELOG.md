@@ -1,3 +1,8 @@
+## [0.0.6] - August 15 2020
+
+* Support customize header background
+* Support padding left and right for header
+
 ## [0.0.5] - August 13 2020
 
 * Change widget name to `expandable_group`

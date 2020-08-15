@@ -38,6 +38,7 @@ import 'package:expandable_group/expandable_group_widget.dart';
 * `isExpanded` is a boolean to expand or collapse header. `isExpanded == true` is the header will be expanded and otherwise. The default value is `false`.
 * `expandedIcon` and `collapsedIcon` are the widgets for expanded and collapsed state. 
 * `headerEdgeInsets` the EdgeInsets of header widget
+* `headerBackgroundColor` can customise header background color
 ### 4. Examples
 ```
 ExpandableGroup(
