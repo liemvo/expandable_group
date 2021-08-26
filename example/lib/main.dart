@@ -25,9 +25,9 @@ class MyApp extends StatelessWidget {
 
   List<List<String>> _generateData() {
     int numberOfGroups = 5;
-    List<List<String>> results = List<List<String>>();
+    List<List<String>> results = <List<String>>[];
     for (int i = 0; i < numberOfGroups; i++) {
-      List<String> items = List<String>();
+      List<String> items = <String>[];
       for (int j = 0; j < numberOfGroups * 5 + i; j++) {
         items.add("Item $j in group $i");
       }
@@ -39,7 +39,7 @@ class MyApp extends StatelessWidget {
 
 class MyHomePage extends StatefulWidget {
   final List<List<String>> data;
-  MyHomePage({Key key, this.title, this.data}) : super(key: key);
+  MyHomePage({Key? key, required this.title, required this.data}) : super(key: key);
 
   final String title;
 
