@@ -26,27 +26,27 @@ class ExpandableGroup extends StatefulWidget {
   /// optional widget for expanded Icon.
   ///
   /// Default value is `Icon(Icons.keyboard_arrow_down)`
-  final Widget expandedIcon;
+  final Widget? expandedIcon;
 
   /// optional widget for collapse Icon.
   ///
   /// Default value is `Icon(Icons.keyboard_arrow_right)`
-  final Widget collapsedIcon;
+  final Widget? collapsedIcon;
 
   /// option value for header EdgeInsets
   ///
   /// Default value will `EdgeInsets.only(left: 0.0, right: 16.0)`
-  final EdgeInsets headerEdgeInsets;
+  final EdgeInsets? headerEdgeInsets;
 
   /// background color of header
   ///
   /// Default value `Theme.of(context).appBarTheme.color`
-  final Color headerBackgroundColor;
+  final Color? headerBackgroundColor;
 
-  ExpandableGroup({Key key,
+  ExpandableGroup({Key? key,
     this.isExpanded = false,
-    @required this.header,
-    @required this.items,
+    required this.header,
+    required this.items,
     this.expandedIcon,
     this.collapsedIcon,
     this.headerEdgeInsets,
@@ -58,7 +58,7 @@ class ExpandableGroup extends StatefulWidget {
 }
 
 class _ExpandableGroupState extends State<ExpandableGroup> {
-  bool _isExpanded;
+  late bool _isExpanded;
 
   @override
   void initState() {
