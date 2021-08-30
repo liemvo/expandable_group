@@ -1,4 +1,10 @@
+
+## [0.0.8] - August 31 2021
+
+* Support nullsafety
+
 ## [0.0.7] - August 15 2020
+
 * Document API
 
 ## [0.0.6] - August 15 2020
